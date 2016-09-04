@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title} esta bien loco
+
+  form(method="POST" action="saludar")
+    input(type="text" name="saludo" id="saludo")
+    input(type="submit" name="envia" id="envia")
